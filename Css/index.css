@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.landing-nav {
+  width: 100%;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 500;
+}
+.nav-end-part {
+  height: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.landing-nav .nav-end-part .menu-list {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.landing-nav .menu-list li {
+  color: blue;
+  font-weight: 500;
+}
+
+.six-dote i {
+  font-size: 20px;
+  color: #000;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  height: 80vh;
+  padding: 0 130px;
+}
+
+.hero-section .hero-left,
+.hero-section .hero-right {
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .hero-left {
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.hero-section .hero-left h1 {
+  font-size: 100px;
+  font-weight: 600;
+  background: linear-gradient(to right, #5423cf, #ee4482);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero-section .hero-right .image-div {
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+.image-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  padding: 30px;
+  display: flex;
+  column-gap: 20px;
+  width: 80%;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.image-text img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.image-text p {
+  font-weight: 500;
+}
+
+.start-btn {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px gray;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.start-btn a {
+  color: #000;
+  text-decoration: none;
+}
+
+.landing-footer {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.landing-footer h1 {
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.landing-footer p:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+/* Gemini Home Page */
+
+.gemini-home {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.gemini-home > h1 {
+  font-size: 35px;
+  background: linear-gradient(to right, #5423cf, #ee4482);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.input-container {
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  border: 1.5px solid gray;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.input-group input {
+  outline: none;
+  border: none;
+  padding: 15px 18px;
+  width: 600px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.input-group input::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.input-btn {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1.5px solid gray;
+  cursor: pointer;
+}
+.input-btn i {
+  font-size: 18px;
+  color: rgb(58, 56, 56);
+}
+
+.input-btn:hover {
+  transform: scale(98%);
+}
+
+.auto-message {
+  display: none;
+}
+
+.chart-list {
+  width: 800px;
+  height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  display: flex;
+  flex-direction: column;
+  row-gap:20px
+}
+
+.chart-list .message .message-content {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 15px;
+}
+.chart-list .message .avtar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.chart-list .message.loading  .avtar{
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.chart-list .message .text {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.copy-btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.chart-list .message:not(.loading):hover .copy-btn {
+  visibility: visible;
+}
+
+.chart-list .loading-indicator {
+  display: none;
+  width: 100%;
+  gap:8px;
+  flex-direction: column;
+}
+
+.chart-list .message.loading   .loading-indicator{
+    display:flex;
+}
+
+.chart-list .loading-indicator .loading-bar {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to right, #5a96f6, #fff,#5a96f6);
+  animation: animate 3s linear infinite;
+}
+.chart-list .loading-indicator .loading-bar:last-child{
+    width:70%;
+}
+
+@keyframes animate {
+    0%{
+        background-position: -800px 0;
+    }
+    100%{
+        background-position:800px 0;
+    }
+}
+.chart-list .message.loading .text{
+    display:none;
+}
+
+
+.send-btn{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .landing-nav .nav-end-part .menu-list {
+    display: none;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .hero-section .hero-left {
+    row-gap: 10px;
+    width: 100%;
+  }
+
+  .hero-section .hero-left h1 {
+    font-size: 30px;
+  }
+  .hero-section .hero-right {
+    width: 100%;
+  }
+
+  .hero-section .hero-right .image-div {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+
+  .image-text {
+    bottom: -10%;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+  }
+
+  /* Gemini home  */
+  .gemini-home {
+    padding: 40px;
+  }
+  .input-container {
+    width: 100%;
+    bottom: 18px;
+    padding:40px 20px 20px 20px;
+    background-color: #fff;
+    z-index:999;
+    justify-content: center;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .input-btn{
+    height:40px;
+    width:40px;
+  }
+  .chart-list {
+    width: 100%;
+  }
+}
