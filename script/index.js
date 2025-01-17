@@ -131,6 +131,7 @@ sendBtn.addEventListener("click", () => {
 deleteBtn.addEventListener("click",()=>{
   chartList.innerHTML=``;
   geminiHome.querySelector(".header").classList.remove("auto-message");
+  document.querySelector(".text-input").value="";
 })
 
 
