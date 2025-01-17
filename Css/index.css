@@ -338,6 +338,46 @@
 
 
 
+/* User Identification Section */
+
+.identification-section{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.identification-section .user-input{
+  width:400px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap:20px;
+}
+
+.identification-section .user-input input{
+  width:100%;
+  border:1.5px solid gary;
+  outline:none;
+  border-radius:25px;
+  padding:10px 20px;
+}
+
+.identification-section .user-input .submit-name-btn{
+  outline:none;
+  border:none;
+  border-radius: 5px;
+  background-color: #5423cf;
+  padding:10px 20px;
+}
+.identification-section .user-input .submit-name-btn a{
+  color:#fff;
+  text-decoration: none;
+  font-size:18px;
+  font-weight: 500;
+}
+
 
 
 
@@ -413,5 +453,10 @@
   }
   .chart-list {
     width: 100%;
+  }
+
+  .identification-section .user-input{
+    width:100%;
+    padding:0 25px;
   }
 }

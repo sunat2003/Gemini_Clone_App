@@ -5,8 +5,30 @@ let geminiHome=document.querySelector(".gemini-home");
 let deleteBtn=document.querySelector(".delete-btn");
 
 let userMessage = null;
+let currentUser="";
 const API_KEY=`AIzaSyD2EgptsU7VUj8Y40T4Q8rBPDHTqTmQhp4`;
 const API_URL=`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+
+
+function handleHeaderName(){
+  currentUser=document.querySelector(".identify-input").value;
+  saveData();
+  document.querySelector(".identify-input").value="";
+}
+
+window.onload = function() {
+  getData();
+};
+
+function saveData() {
+  localStorage.setItem("currentUserName",currentUser);
+}
+
+
+function getData()
+{
+  geminiHome.querySelector(".header").innerText=`Hello , ${localStorage.getItem("currentUserName")}`;
+}
 
 const createMessageElement = (content, ...className) => {
   const div = document.createElement("div");
